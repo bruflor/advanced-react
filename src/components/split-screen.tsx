@@ -7,16 +7,16 @@ const Container = styled.div`
 `;
 
 const Panel = styled.div`
-    flex:1;
+    flex: ${(p:{flex:number}) => p.flex};
 `;
-export const SplitScreen = ({Left, Right}:{Left:any, Right:any}) => {
+export const SplitScreen = ({Left, leftWidth=1, rightWidth=1, Right}:{Left:any, Right:any, leftWidth?:number, rightWidth?:number}) => {
     return (
         <Container>
-            <Panel>
+            <Panel flex={leftWidth}>
                 <Left />
             </Panel>
 
-            <Panel>
+            <Panel flex={rightWidth}>
                 <Right />
             </Panel>
         </Container>

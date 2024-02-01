@@ -10,7 +10,7 @@ const RightSideComp = () => {
 function App() {
 
   return (
-    <SplitScreen Left={LeftSideComp} Right={RightSideComp}/>
+    <SplitScreen Left={LeftSideComp} Right={RightSideComp} leftWidth={1} rightWidth={3}/>
      
   )
 }
