@@ -1,20 +1,13 @@
-import { Modal } from './components/Modal'
+import { CurrentUserLoader } from './components/current-user-loader'
+import { UserInfo } from './components/user-info'
 
 function App() {
 
   return (
     <>
-    <Modal>
-      <div>
-        <h2>List title</h2>
-        <ul>
-          <li>lorem </li>
-          <li>lorem </li>
-          <li>lorem </li>
-          <li>lorem </li>
-        </ul>
-      </div>
-    </Modal>
+    <CurrentUserLoader>
+      <UserInfo />
+    </CurrentUserLoader>
     </>
      
   )
