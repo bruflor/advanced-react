@@ -1,7 +1,7 @@
 {
   "name": "advanced-react",
   "private": true,
-  "proxy":"http://localhost:9090",
+  "proxy": "http://localhost:9090",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
