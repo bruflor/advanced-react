@@ -11,6 +11,7 @@ export const ResourceLoader = ({resourceUrl, resourceName, children}: {resourceU
         })()
     }, [resourceUrl])
     
+    console.log(resource)
     return (
         <>
         {React.Children.map(children, (child) => {
