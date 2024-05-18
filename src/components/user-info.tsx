@@ -1,3 +1,5 @@
+import {useCurrentUser} from "./current-user-hook.tsx";
+
 export interface IUserInfo{
 name:string,
 age:number,
@@ -6,7 +8,8 @@ books:string[],
 }
 
 
-export const UserInfo = ({ user }:{user?:IUserInfo}) => {
+export const UserInfo = () => {
+    const user:IUserInfo | null = useCurrentUser()
   const { name, age, country, books } = user || {};
   return user ? (
     <>
