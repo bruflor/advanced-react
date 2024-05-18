@@ -34,6 +34,6 @@ export const UserInfoForm = includeUpdatableResouce(
       <h3>Loading...</h3>
     );
   },
-  "/users/2",
+  "api/users/2",
   "user"
 );

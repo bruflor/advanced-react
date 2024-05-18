@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
+//transforming the first letter only to uppercase
 const toCapital = (str) => str.charAt(0).toUpperCase() + str.slice(1);
 
 export const includeUpdatableResouce = (
@@ -36,6 +37,7 @@ export const includeUpdatableResouce = (
       setUpdatableData(data);
     };
 
+    //This object of props passes to the component as props with the new names based on the resourceName
     const resourceProps = {
       [resourceName]: updatableData,
       [`onChange${toCapital(resourceName)}`]: changeHandler,
