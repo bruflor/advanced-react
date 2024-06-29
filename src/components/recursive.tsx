@@ -8,6 +8,7 @@ export const RecursiveComponent = ({data}:{data:any}) => {
 
     const pais = Object.entries(data)
 
+
     return (
         <>
         {pais.map(([key, value]) => (
