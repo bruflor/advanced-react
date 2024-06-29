@@ -1,4 +1,5 @@
 import {RecursiveComponent} from "./components/recursive.tsx";
+import {ErrorBoundry} from "./components/error-boundry.tsx";
 
 function App() {
     const mockObject = {
@@ -20,7 +21,10 @@ function App() {
     };
   return (
     <>
-        <RecursiveComponent data={mockObject} />
+        <ErrorBoundry fallback={<h1>Error with component boundry</h1>}>
+            <RecursiveComponent data={mockObject} />
+        </ErrorBoundry>
+
     </>
      
   )
